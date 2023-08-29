@@ -2,6 +2,9 @@
 const [mario, pipe, restart] = [".mario", ".pipe", ".restart"].map((item)=>{
     return document.querySelector(item)
 })
+const span = document.querySelector("span")
+let number = 0
+let yourScore 
 
 const jump = () => {
    mario.classList.add("jump")
@@ -12,6 +15,7 @@ const jump = () => {
 }
 
 const loop = setInterval(() => {
+
     const pipePosition = pipe.offsetLeft;
     // colocando o mais na frente, ele tenta coverter a string em numero
     const marioPosition = +window.getComputedStyle(mario).bottom.replace("px", "")
@@ -31,8 +35,18 @@ const loop = setInterval(() => {
         mario.style.bottom = "100px "
 
         clearInterval(loop)
+        clearInterval(yourScore )
     }       
 },10);
+
+ yourScore = setInterval(() => {
+   number++ 
+   span.innerHTML = number
+
+}, 500);
+
+
+
 restart.addEventListener("click", () =>{
     location.reload(true)
 })

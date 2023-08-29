@@ -1,26 +1,28 @@
-*{
+* {
+    font-family: 'Bacasime Antique', serif;
+
     margin: 0;
     box-sizing: border-box;
     padding: 0;
 }
 
-body{
-    background-color:black ;
+body {
+    background-color: black;
 }
 
-.board{
+.board {
     width: 80%;
     height: 500px;
     border-bottom: 15px solid rgb(22, 144, 22);
     margin: 30px;
     margin-left: 100px;
-    background: linear-gradient(#87ceeb,#e0f6ff);
-    position:absolute;
+    background: linear-gradient(#87ceeb, #e0f6ff);
+    position: absolute;
     overflow: hidden;
 }
 
-.button{
-    width:80%;
+.button {
+    width: 80%;
     padding: 10px 0;
     margin: 0 auto;
     display: flex;
@@ -28,10 +30,11 @@ body{
     align-items: center;
 }
 
-.restart{
+.restart {
     width: 40%;
-    padding: 10px 0;;
-    cursor:pointer;
+    padding: 10px 0;
+    ;
+    cursor: pointer;
     border: none;
     background-color: green;
     font-size: 26px;
@@ -40,67 +43,86 @@ body{
     transition: 800ms;
 }
 
-.clouds{
+.clouds {
     position: absolute;
-    width:150px;
+    width: 150px;
     top: 100px;
     animation: clouds 10s infinite linear;
 }
 
-.mario{
+.mario {
     position: absolute;
     bottom: 0;
-    width:120px;
+    width: 120px;
 }
 
-.jump{
+.jump {
     animation: mario 500ms ease-out;
 
 
 }
 
-.pipe{
+.pipe {
     position: absolute;
     bottom: -10px;
-    width:80px;
+    width: 80px;
     animation: pipe 1300ms infinite linear;
 }
+
+p {
+
+    position: relative;
+    margin-left: 80%;
+    margin-top: 458px;
+    font-size: 29px;
+    opacity: 0.8;
+}
+
+
 
 
 /*animaçoe*/
 
 @keyframes clouds {
-    from{
+    from {
         right: -150px;
     }
-    to{
+
+    to {
         right: 100%;
     }
-    
+
 }
+
 @keyframes pipe {
-    from{
+    from {
         right: -80px;
     }
-    to{
+
+    to {
         right: 100%;
     }
-    
+
 }
+
 @keyframes mario {
-  0%{
-    bottom: 0;
-  }
-  40%{
-    bottom: 120px;
-  }
-  50%{
-    bottom: 120px;
-  }
-  60%{
-    bottom: 120px;
-  }
-  100%{
-    bottom: 0px;
-  }
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 120px;
+    }
+
+    50% {
+        bottom: 120px;
+    }
+
+    60% {
+        bottom: 120px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
 }
