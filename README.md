@@ -10,4 +10,5 @@
      
 </p>
 
-<img scr="C:\Users\Talita Ferreira\OneDrive\Área de Trabalho\Gustavo\portifolio\assets\print-mario.png">
+<img src="https://github.com/Gug4ZL/jogo-mario/assets/136204571/29ee995d-db51-41d6-b6bf-233bbbf8ace8">
+
